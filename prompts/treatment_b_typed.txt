@@ -1,0 +1,42 @@
+You will review code for bugs, but first you will construct a synthetic type
+lattice over it.
+
+STEP 1 — Declare abstract sorts.
+Assign every significant variable, parameter, and function return in the code
+below an abstract sort drawn from an arbitrary alphabet: SORT_A, SORT_B,
+SORT_C, and so on. Two things get the SAME sort if and only if it would be
+meaningful to add them, compare them, or substitute one for the other. The
+sort names carry no domain meaning — they are opaque labels.
+
+STEP 2 — Build the operation table.
+Write an explicit table of permitted operations over your sorts, in the form:
+
+  <SORT> <op> <SORT> -> <SORT>        (permitted)
+  <SORT> <op> <SORT> -> ILL-SORTED    (forbidden)
+
+Cover at minimum: +, -, *, /, and the comparison operators, plus argument
+passing (an argument of sort X may only bind to a parameter of sort X).
+
+STEP 3 — Type-check the code.
+Walk every expression, assignment, comparison, and call site in the code and
+check it against your operation table. Any expression that is ILL-SORTED under
+your table is a suspicious line.
+
+STEP 4 — Report.
+Report each suspected bug in this exact format, one per bug:
+
+FLAG line=<line number> :: <one-sentence description of the defect>
+
+If you find no bugs, output exactly:
+
+NO BUGS FOUND
+
+Steps 1-3 may be written out as prose or tables. Step 4 must consist only of
+FLAG lines (or NO BUGS FOUND), and must come last, after a line containing
+only:
+
+=== REPORT ===
+
+```python
+{code}
+```

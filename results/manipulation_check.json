@@ -1,0 +1,311 @@
+{
+  "leak_scan": {},
+  "n": 60,
+  "correct": 11,
+  "accuracy": 0.18333333333333332,
+  "chance": 0.25,
+  "p_value": 0.9141132281786591,
+  "blinding_failed": false,
+  "guesses": [
+    {
+      "instance_id": "72130d61e22a9b50",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "790668168a956b81",
+      "truth": "control_plus",
+      "guess": "control"
+    },
+    {
+      "instance_id": "20fa6ef0027cb18a",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "7db07aa1d7321eaa",
+      "truth": "control_plus",
+      "guess": "control"
+    },
+    {
+      "instance_id": "9c40ed3b3ce5681f",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "92b13986f24386f8",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "8f263773e9d930e8",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "a205ceecb82d7ae6",
+      "truth": "treatment_c",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "c2607b2840b37547",
+      "truth": "treatment_a",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "4c3a4b211ae54bb8",
+      "truth": "treatment_c",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "a23327da8fbaceb1",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "7f3ba000c21af473",
+      "truth": "treatment_a",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "c0dcb7eb98ce7592",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "5b3dc04b20cb7055",
+      "truth": "control",
+      "guess": "control"
+    },
+    {
+      "instance_id": "0400b9b5a8039b97",
+      "truth": "treatment_c",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "b2e8a1be367912bc",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "06dbed48bc2f8809",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "0a3e416919cfcb66",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "24291629d6018aba",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "867bd33589d8bfc2",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "5219d7764d26ca39",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "94a32e77fa4ec88b",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "9f5d28fc4ffdc4a4",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "2ecc08f4a8e234aa",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "747e445e5496ac21",
+      "truth": "treatment_a",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "0f6a10d2707f9a2e",
+      "truth": "control",
+      "guess": "control"
+    },
+    {
+      "instance_id": "00b1092632cccd20",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "5203c76e0ac3b8d7",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "7750e92fc33fbbc9",
+      "truth": "treatment_a",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "b924d721cde4a682",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "e889717f4933ae59",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "4bed6e2f8a578c84",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "5b316e832eab7cfd",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "4e6115e3e942545c",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "93f21e309c7d2966",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "dd490ae6b1b88bcb",
+      "truth": "control",
+      "guess": "control"
+    },
+    {
+      "instance_id": "49cb39ddf00156d4",
+      "truth": "treatment_a",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "b702f77bd4ca68b5",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "a86af2c3d61cdb36",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "7c6a05c0ef4b0026",
+      "truth": "treatment_c",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "b7cb87e7d179c3fd",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "7ca6a420c712f545",
+      "truth": "control",
+      "guess": "control"
+    },
+    {
+      "instance_id": "0df017f12cdf460f",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "e4f55ddede2c9f42",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "4ce4a7575da85537",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "9763b35bb9b67465",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "bf7e874ad5a858a2",
+      "truth": "control",
+      "guess": "control"
+    },
+    {
+      "instance_id": "465d3f65eeab0209",
+      "truth": "treatment_c",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "04037c759f3348af",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "07f87f093b44cb25",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "d5d13b251169c6e2",
+      "truth": "control",
+      "guess": "control"
+    },
+    {
+      "instance_id": "3a70cce67fa0b9ef",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "27f7d020271d61bd",
+      "truth": "treatment_a",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "07cfb06769f91b11",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "90ee34b2735aa6d9",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "287e6e7cc97c0d74",
+      "truth": "control_plus",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "e4bfc497ef13e3e9",
+      "truth": "treatment_c",
+      "guess": "control"
+    },
+    {
+      "instance_id": "c1e27681d49f3f3e",
+      "truth": "control",
+      "guess": "treatment_c"
+    },
+    {
+      "instance_id": "46e0d65d34dfe4b4",
+      "truth": "treatment_a",
+      "guess": "control"
+    },
+    {
+      "instance_id": "faf80a82a0963158",
+      "truth": "control",
+      "guess": "treatment_c"
+    }
+  ]
+}

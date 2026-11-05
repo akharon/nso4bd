@@ -1,0 +1,43 @@
+You will review code for bugs, but first you will build a narrative overlay
+on top of it.
+
+STEP 1 — Cast the characters.
+Assign every significant variable, parameter, and function in the code below a
+role in a small fictional bestiary. For example: a duck, a lion, a river, a
+lantern.
+
+Assign the creatures AT RANDOM. Do not try to give the same creature to things
+that are the same kind of thing, and do not try to give different creatures to
+things that differ. Work down the code in order and assign whatever creature
+comes to mind next, ignoring what each variable actually holds. Two variables
+holding the same kind of value should end up with different creatures as often
+as not.
+
+STEP 2 — Write the rules of the world.
+State a handful of informal narrative rules about which creatures may interact
+with which, and how. For example: "a duck cannot eat a lion", "a lantern can
+be carried by anyone but never drunk", "two rivers may merge but a river and a
+lantern may not."
+
+STEP 3 — Read the code as a story.
+Walk through the code and narrate what each operation does in terms of your
+bestiary. Where an operation maps onto a forbidden interaction — a duck eating
+a lion — that is a suspicious line.
+
+STEP 4 — Report.
+Report each suspected bug in this exact format, one per bug:
+
+FLAG line=<line number> :: <one-sentence description of the defect>
+
+If you find no bugs, output exactly:
+
+NO BUGS FOUND
+
+Steps 1-3 may be written out as prose. Step 4 must consist only of FLAG lines
+(or NO BUGS FOUND), and must come last, after a line containing only:
+
+=== REPORT ===
+
+```python
+{code}
+```

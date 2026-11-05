@@ -1,0 +1,140 @@
+{
+  "seeded_bugs": [
+    {
+      "correct_file": "corpus/correct/c07_geo_fence.py",
+      "bug_class": "swapped_operands",
+      "domain": "numeric_units",
+      "bug_line": 24,
+      "description": "Comparison operands swapped: the fence test now matches vehicles OUTSIDE the radius instead of inside.",
+      "buggy_file": "corpus/buggy/b07_geo_fence.py",
+      "divergence_witness": "correct=('ok', 'True') buggy=('ok', 'False')"
+    },
+    {
+      "correct_file": "corpus/correct/c13_audit_transfer.py",
+      "bug_class": "swapped_operands",
+      "domain": "id_handling",
+      "bug_line": 32,
+      "description": "Source and destination account IDs are swapped in the ledger postings: money moves the wrong direction.",
+      "buggy_file": "corpus/buggy/b13_audit_transfer.py",
+      "divergence_witness": "correct=('ok', \"({'source_balance_cents': 750, 'dest_balance_cents': 250}, {'acct-a': 750, 'acct-b': 250})\") buggy=('ok', \"({'source_balance_cents': 1250, 'dest_balance_cents': -250}, {'acct-a': 1250, 'acct-b': -250})\")"
+    },
+    {
+      "correct_file": "corpus/correct/c01_lane_routing.py",
+      "bug_class": "swapped_operands",
+      "domain": "control_flow",
+      "bug_line": 30,
+      "description": "Source and target lanes are swapped in rebalance: parcels move from the overflow lane into the already-full lane, the wrong direction.",
+      "buggy_file": "corpus/buggy/b01_lane_routing.py",
+      "divergence_witness": "correct=('ok', '(3, [3, 4, 5, 6, 7, 8, 9], [99, 0, 1, 2])') buggy=('ok', '(1, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 99], [])')"
+    },
+    {
+      "correct_file": "corpus/correct/c12_temperature_control.py",
+      "bug_class": "wrong_variable",
+      "domain": "numeric_units",
+      "bug_line": 27,
+      "description": "Reports the raw Fahrenheit sensor reading in a field declared as Celsius.",
+      "buggy_file": "corpus/buggy/b12_temperature_control.py",
+      "divergence_witness": "correct=('ok', \"{'action': 'cool', 'current_celsius': 100.0, 'setpoint_celsius': 50.0}\") buggy=('ok', \"{'action': 'cool', 'current_celsius': 212.0, 'setpoint_celsius': 50.0}\")"
+    },
+    {
+      "correct_file": "corpus/correct/c02_order_refund.py",
+      "bug_class": "wrong_variable",
+      "domain": "id_handling",
+      "bug_line": 37,
+      "description": "Audit record writes the order ID into the line_item_id field.",
+      "buggy_file": "corpus/buggy/b02_order_refund.py",
+      "divergence_witness": "correct=('ok', \"[{'actor': 'user-1', 'order_id': 'ord-1', 'line_item_id': 'li-1', 'amount_cents': 250, 'receipt_id': 'rcpt-1'}]\") buggy=('ok', \"[{'actor': 'user-1', 'order_id': 'ord-1', 'line_item_id': 'ord-1', 'amount_cents': 250, 'receipt_id': 'rcpt-1'}]\")"
+    },
+    {
+      "correct_file": "corpus/correct/c09_state_machine.py",
+      "bug_class": "wrong_variable",
+      "domain": "control_flow",
+      "bug_line": 27,
+      "description": "Transition legality is checked with current and target reversed, so the guard consults the wrong row of the transition table.",
+      "buggy_file": "corpus/buggy/b09_state_machine.py",
+      "divergence_witness": "correct=('ok', \"(True, 'submitted', [('draft', 'submitted')])\") buggy=('ok', \"(False, 'draft', [])\")"
+    },
+    {
+      "correct_file": "corpus/correct/c04_rate_limiter.py",
+      "bug_class": "unit_type_mismatch",
+      "domain": "numeric_units",
+      "bug_line": 33,
+      "description": "Tokens are multiplied by a rate (tokens/second) instead of divided, yielding tokens^2/second where seconds are required.",
+      "buggy_file": "corpus/buggy/b04_rate_limiter.py",
+      "divergence_witness": "correct=('ok', '2.0') buggy=('ok', '8.0')"
+    },
+    {
+      "correct_file": "corpus/correct/c10_tenant_lookup.py",
+      "bug_class": "unit_type_mismatch",
+      "domain": "id_handling",
+      "bug_line": 18,
+      "description": "Compares an org ID against a tenant ID: two different entity kinds held in the same shape, so the sibling list is always empty.",
+      "buggy_file": "corpus/buggy/b10_tenant_lookup.py",
+      "divergence_witness": "correct=('ok', \"['t2']\") buggy=('ok', '[]')"
+    },
+    {
+      "correct_file": "corpus/correct/c15_batch_dispatch.py",
+      "bug_class": "unit_type_mismatch",
+      "domain": "control_flow",
+      "bug_line": 20,
+      "description": "Compares an item COUNT against a BYTE budget.",
+      "buggy_file": "corpus/buggy/b15_batch_dispatch.py",
+      "divergence_witness": "correct=('ok', \"{'accepted': [], 'rejected': [{'id': 0}, {'id': 1}, {'id': 2}, {'id': 3}, {'id': 4}, {'id': 5}]}\") buggy=('ok', \"{'accepted': [{'id': 0}, {'id': 1}, {'id': 2}, {'id': 3}, {'id': 4}, {'id': 5}], 'rejected': []}\")"
+    },
+    {
+      "correct_file": "corpus/correct/c03_sensor_window.py",
+      "bug_class": "off_by_one",
+      "domain": "numeric_units",
+      "bug_line": 8,
+      "description": "Loop bound drops the final full window.",
+      "buggy_file": "corpus/buggy/b03_sensor_window.py",
+      "divergence_witness": "correct=('ok', '[1.5, 2.5, 3.5, 4.5]') buggy=('ok', '[1.5, 2.5, 3.5]')"
+    },
+    {
+      "correct_file": "corpus/correct/c11_member_roster.py",
+      "bug_class": "off_by_one",
+      "domain": "id_handling",
+      "bug_line": 15,
+      "description": "Treats the 1-indexed page number as 0-indexed, skipping the first page of the member roster entirely.",
+      "buggy_file": "corpus/buggy/b11_member_roster.py",
+      "divergence_witness": "correct=('ok', \"[{'id': 'm1'}, {'id': 'm2'}]\") buggy=('ok', \"[{'id': 'm3'}]\")"
+    },
+    {
+      "correct_file": "corpus/correct/c14_playlist_shuffle.py",
+      "bug_class": "off_by_one",
+      "domain": "control_flow",
+      "bug_line": 13,
+      "description": "Separation window is one track too short, so the artist-gap constraint is under-enforced.",
+      "buggy_file": "corpus/buggy/b14_playlist_shuffle.py",
+      "divergence_witness": "correct=('ok', 'True') buggy=('ok', 'False')"
+    },
+    {
+      "correct_file": "corpus/correct/c06_solar_yield.py",
+      "bug_class": "missing_check",
+      "domain": "numeric_units",
+      "bug_line": 10,
+      "description": "Removes the negative-irradiance guard, so a negative peak-sun-hours reading yields negative energy instead of zero.",
+      "buggy_file": "corpus/buggy/b06_solar_yield.py",
+      "divergence_witness": "correct=('ok', '0.0') buggy=('ok', '-3.0')"
+    },
+    {
+      "correct_file": "corpus/correct/c05_permission_grant.py",
+      "bug_class": "missing_check",
+      "domain": "id_handling",
+      "bug_line": 18,
+      "description": "Removes the None guard: a non-member actor raises TypeError instead of being denied.",
+      "buggy_file": "corpus/buggy/b05_permission_grant.py",
+      "divergence_witness": "correct=('ok', \"('ok', False)\") buggy=('ok', \"('raise', 'TypeError')\")"
+    },
+    {
+      "correct_file": "corpus/correct/c08_retry_backoff.py",
+      "bug_class": "missing_check",
+      "domain": "control_flow",
+      "bug_line": 24,
+      "description": "Removes the final-attempt guard, so the loop sleeps after the last attempt before giving up.",
+      "buggy_file": "corpus/buggy/b08_retry_backoff.py",
+      "divergence_witness": "correct=('ok', '(3, 2)') buggy=('ok', '(3, 3)')"
+    }
+  ],
+  "excluded_mutations": []
+}

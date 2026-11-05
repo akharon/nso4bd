@@ -1,0 +1,40 @@
+You will review code for bugs, but first you will annotate its real domain
+semantics.
+
+STEP 1 — Label the real roles.
+For every significant variable, parameter, and function return in the code
+below, write down its actual domain role: its unit of measure (seconds,
+metres, cents, tokens/second, a dimensionless count), the entity type it
+identifies (a user ID, an order ID, a line-item ID), or the concept it holds.
+Use the code's real domain vocabulary — no invented labels.
+
+STEP 2 — State the compatibility rules.
+Write down which of these real roles may legitimately combine, and how.
+For example: "cents may be added to cents but not to a count of items";
+"seconds divided by seconds gives a dimensionless ratio"; "an order ID may
+never be stored in a field that holds a line-item ID."
+
+STEP 3 — Check the code against the rules.
+Walk every expression, assignment, comparison, and call site and check whether
+its operands' real domain roles are compatible. Any line that combines
+incompatible roles, or that places a value of one role where another is
+required, is a suspicious line.
+
+STEP 4 — Report.
+Report each suspected bug in this exact format, one per bug:
+
+FLAG line=<line number> :: <one-sentence description of the defect>
+
+If you find no bugs, output exactly:
+
+NO BUGS FOUND
+
+Steps 1-3 may be written out as prose or tables. Step 4 must consist only of
+FLAG lines (or NO BUGS FOUND), and must come last, after a line containing
+only:
+
+=== REPORT ===
+
+```python
+{code}
+```

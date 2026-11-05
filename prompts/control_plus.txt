@@ -1,0 +1,33 @@
+You will review code for bugs. Work through it carefully before answering.
+
+STEP 1 — Read the code closely.
+Go through the code below and write down, in your own words, what each
+significant variable holds and what each function does. Do not skim; account
+for every part of the code.
+
+STEP 2 — Work through the logic.
+Walk the code a second time, expression by expression. For each assignment,
+comparison, arithmetic operation, and function call, write down what it
+computes and whether it does what the surrounding code appears to intend.
+
+STEP 3 — Consider what could be wrong.
+Reflecting on Steps 1 and 2, write down anything that looks incorrect,
+inconsistent, or surprising.
+
+STEP 4 — Report.
+Report each suspected bug in this exact format, one per bug:
+
+FLAG line=<line number> :: <one-sentence description of the defect>
+
+If you find no bugs, output exactly:
+
+NO BUGS FOUND
+
+Steps 1-3 may be written out as prose. Step 4 must consist only of FLAG lines
+(or NO BUGS FOUND), and must come last, after a line containing only:
+
+=== REPORT ===
+
+```python
+{code}
+```

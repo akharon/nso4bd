@@ -1,0 +1,16 @@
+Review the following code for bugs.
+
+Report each suspected bug you find, in this exact format, one per bug:
+
+FLAG line=<line number> :: <one-sentence description of the defect>
+
+If you find no bugs, output exactly:
+
+NO BUGS FOUND
+
+Output only FLAG lines (or NO BUGS FOUND). Do not include any other prose,
+preamble, or summary.
+
+```python
+{code}
+```
